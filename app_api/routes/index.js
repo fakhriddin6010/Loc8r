@@ -3,10 +3,6 @@ const router = express.Router();
 const ctrlLocations = require('../controllers/locations');
 const ctrlReviews = require('../controllers/reviews');
 
-// router.get('/', ctrlLocations.homelist);
-// router.get('/location', ctrlLocations.locationInfo);
-// router.get('/location/review/new', ctrlLocations.addReview);
-
 // locations
 router
   .route('/locations')
