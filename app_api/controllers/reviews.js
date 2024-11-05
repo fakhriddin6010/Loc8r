@@ -144,8 +144,7 @@ const reviewsDeleteOne = async (req, res) => {
         return res.status(404).json({ 'message': 'Review not found' });
       }
 
-      // review.remove();
-      review.deleteOne();
+      review.remove();
       await location.save();
       await updateAverageRating(location._id);
       return res.status(204).json(null);

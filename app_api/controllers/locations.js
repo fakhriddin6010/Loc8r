@@ -154,20 +154,6 @@ const locationsUpdateOne = async (req, res) => {
   }
 };
 
-const renderReviewForm=(req,res)=>{
-  res.render('location-review-form',{
-    title:"Review Starcups on Loc8r",
-    peage:{title:'Review Starcups'}
-  })
-};
-const addReview= (req, res) =>{
-  renderReviewForm(req, res);
-};
-
-const doAddReview=(req, res)=>{
-
-};
-
 const locationsDeleteOne = async (req, res) => {
   const { locationid } = req.params;
   if (!locationid) {
@@ -196,13 +182,10 @@ const locationsDeleteOne = async (req, res) => {
   }
 };
 
-
-
 module.exports = {
   locationsListByDistance,
   locationsCreate,
   locationsReadOne,
   locationsUpdateOne,
-  locationsDeleteOne,
-  doAddReview
+  locationsDeleteOne
 };
