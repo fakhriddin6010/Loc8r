@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit{
+  constructor(){}
+
+  ngOnInit(){
+      
+  }
+
+  public pageContent = {
+    header:{
+      title: 'About Loc8r',
+      strapline: ''
+    },
+    content : 'Loc8r was created to help people find place to sit \
+    down and get a bit of work done.\n\nLorem ipsum dolor sit amet,\
+    consectetur adipiscing elit.'
+  }
 
 }
