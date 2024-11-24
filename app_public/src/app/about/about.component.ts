@@ -7,21 +7,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent implements OnInit{
-  constructor(){}
+export class AboutComponent implements OnInit {
 
-  ngOnInit(){
-      
+  constructor() { }
+
+  ngOnInit(): void {
   }
 
   public pageContent = {
-    header:{
+    header: {
       title: 'About Loc8r',
       strapline: ''
     },
-    content : 'Loc8r was created to help people find place to sit \
-    down and get a bit of work done.\n\nLorem ipsum dolor sit amet,\
-    consectetur adipiscing elit.'
+    content: 'Loc8r was created to help people find places to sit \
+      down and get a bit of work done. \n\nLorem ipsum dolor sit amat, \
+      consectetur adipiscing elit.'
   }
-
+  
 }
