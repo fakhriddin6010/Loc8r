@@ -3,7 +3,7 @@ const readLine = require('readline');
 mongoose.set("strictQuery", false);
 
 const dbURI = 'mongodb://localhost/Loc8r';
-const dbPassword = process.env.MONGODB_PASSWORD;
+// const dbPassword = process.env.MONGODB_PASSWORD;
 // const dbURI = `mongodb+srv://my_atlas_user:${dbPassword}@cluster0.s0fko.mongodb.net/Loc8r`;
 
 const connect = () => {

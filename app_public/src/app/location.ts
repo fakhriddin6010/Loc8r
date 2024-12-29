@@ -1,15 +1,16 @@
-class OpeningTimes{
+class OpeningTimes {
     days!: string;
     opening!: string;
     closing!: string;
     closed!: string;
 }
-export class Review{
+
+export class Review {
     author!: string;
     rating!: number;
     reviewText!: string;
-  
 }
+
 export class Location {
     _id!: string;
     name!: string;
@@ -20,4 +21,5 @@ export class Location {
     reviews!: Review[];
     coords!: number[];
     openingTimes!: any[];
-}
+  }
+
